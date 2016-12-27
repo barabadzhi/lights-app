@@ -30,7 +30,7 @@
     "appId": "com.hiseni.lights-app",
     "linux": {
       "category": "Utility",
-      "target": "snap"
+      "target": "deb"
     },
     "nsis": {
       "language": "31"

@@ -172,3 +172,10 @@ h1 {
 .standards-table td {
     border: 0.16em solid #ccc;
 }
+
+div.links {
+    text-align: center;
+    margin: 1em 0;
+    font-family: 'Fira Sans';
+    font-weight: 300;
+}

@@ -1,5 +1,5 @@
 const electron = require('electron');
-const { ipcRenderer } = electron;
+const { ipcRenderer, shell } = electron;
 
 const Chart = require('chart.js');
 
@@ -37,6 +37,11 @@ document.getElementById('Graph').addEventListener('click', function (event) {
   document.querySelector('.webcams-tab').classList.add('active');
 }, false);
 
+
+document.querySelector('div.links a').addEventListener('click', function (event) {
+  event.preventDefault();
+  shell.openExternal('https://github.com/hiseni/lights-app');
+}, false);
 
 navigator.getUserMedia({
   video: true,
