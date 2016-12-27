@@ -1,0 +1,39 @@
+{
+  "name": "lights-app",
+  "productName": "lights-app",
+  "version": "0.1.0",
+  "description": "Simple Electron-based webcam lux meter application",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "build --dir",
+    "dist": "build"
+  },
+  "postinstall": "install-app-deps",
+  "repository": "https://github.com/hiseni/lights-app",
+  "keywords": [
+    "Electron",
+    "webcam",
+    "lux",
+    "meter"
+  ],
+  "author": "Bogdan Arabadzhi <bogdan.today@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^1.4.12",
+    "electron-builder": "^10.13.0"
+  },
+  "dependencies": {
+    "chart.js": "^2.4.0"
+  },
+  "build": {
+    "appId": "com.hiseni.lights-app",
+    "linux": {
+      "category": "Utility",
+      "target": "snap"
+    },
+    "nsis": {
+      "language": "31"
+    }
+  }
+}
